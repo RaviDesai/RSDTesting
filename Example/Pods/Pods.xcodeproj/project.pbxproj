@@ -1,0 +1,1328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1326CAE9F0D51EF37D205FB6033FAD89 /* OHHTTPStubsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FED7D4EDE46CD1A88D9A50760507D4 /* OHHTTPStubsResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1B9AC9CEF73D0B1EB2644F807A690249 /* APIBodyEncoderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8CE3E6FE3D4BA5EB9C5AB6CBFC6556 /* APIBodyEncoderProtocol.swift */; };
+		1D720A4A931BCBA379C13E1C2111399D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C46EE95EEAD650B27F86C28E701EF /* LoginResponse.swift */; };
+		2063118AD74AC171F15A3D0CF21D1690 /* OHPathHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = BC1A03A1DAE33156ACF043452958FBA5 /* OHPathHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33595DB66CF9D1602EF36D04F5F09416 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6FB791A2DB1D40220D3FD9F3C21CAD /* OHHTTPStubs.framework */; };
+		3661D4104F1AF32EC6C6AA0FB79083ED /* APIDataResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8603C05C685233146CA72EAF6012DC7B /* APIDataResponseParser.swift */; };
+		38A1252EBE2FE02DA60DE59D4BBDC133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3346AB11138D9E9C5A58DA632F5E38A5 /* Foundation.framework */; };
+		418577043233262260163262D71E6DD7 /* APISite.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7184BF1558EA9F4BFD0820FA14DF29 /* APISite.swift */; };
+		466BE6A0513BE4BB178359AADBC3AC92 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A545A763321777FE9F2C529432EA9 /* NetworkResponse.swift */; };
+		47686641885B48E09ED09AF01AAAED8E /* OHHTTPStubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 6813B6286E0B2509038C4EA6A73EB928 /* OHHTTPStubs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B0E0944A89F427C76E6BED777ACDCBB /* RSDTesting-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44637D588817DB4C3EC89F003FF52A /* RSDTesting-dummy.m */; };
+		4E7356E6276A4F39E9669BB3F6477469 /* APIConsumersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC031006222BAE5451EC30E5D76C8FFC /* APIConsumersClient.swift */; };
+		52C78FBBDEB4F4297A4DF48F20CE8705 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF39544438B9B3DC9B878C3D07C32099 /* UIKit.framework */; };
+		5343C2976ECAF28B12F0C8DB00B78A62 /* OHHTTPStubs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 572D598F60248DD7ECD173D5C851BA18 /* OHHTTPStubs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5857DE752D20EB325B621F651A21BB70 /* LoginParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EAF6E40A3BBD76DEE5ABB20B4DA218 /* LoginParameters.swift */; };
+		58E3446B5A51AE7C207C664A90981DE3 /* Pods-RSDTesting_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9CCE52061DD966B31AFB0530EB1CD58 /* Pods-RSDTesting_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A0FA55B5BE8957FECF519E7118C826A /* RSDTesting-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 034775C49D89151F8F0CA8537F4579B9 /* RSDTesting-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61061C63F9D3351D73E2EBEFBAF53F56 /* JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3818AE1CA2524133BE41E3B38D1ED67 /* JSONSerializable.swift */; };
+		6BEE5D314DD75763B503CD005068534D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3346AB11138D9E9C5A58DA632F5E38A5 /* Foundation.framework */; };
+		6C395314B4F8334164EE57AF6DE100A5 /* APIObjectResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4165CC1D02BA2860BA3FC0BEFBF9FCB2 /* APIObjectResponseParser.swift */; };
+		70937E15EDFF6DC6BBB103EF5F87D559 /* RSDSerialization-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21908F9957EDF909CE76D60A5731710B /* RSDSerialization-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C2F5D88E322DE28D5A5C657383A37FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3346AB11138D9E9C5A58DA632F5E38A5 /* Foundation.framework */; };
+		80BBE2990B87DAFA0D46F216F67BBC77 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74164EC754FA50DE5CEB3FC1DCF96112 /* APIRequest.swift */; };
+		86733094EA909FF48A0968B01914175D /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2ED308C9F2A55BC8A995C483FCFC6 /* APICall.swift */; };
+		906DF0CC653246138168E0810DEE3A00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431B82E893CBD344B8E3AA362774242D /* CFNetwork.framework */; };
+		94AA2D4717AE457C2E22BE230F7AE643 /* APIURLBodyEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B647A90E89A711D7A105E3BFD6D542 /* APIURLBodyEncoder.swift */; };
+		963E4DBF815A0CC253428F43FFB20BD5 /* APIResponseParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2041616294E1EF7A8CFBE48E074D85 /* APIResponseParserProtocol.swift */; };
+		96BE45D0E02DA2C4B87DA5FD64E03CA8 /* AsynchronousTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963C03095063149BE66FEBA10880583 /* AsynchronousTestCase.swift */; };
+		97E6A07DA093B91B3F6D9D3A60563F3A /* OHHTTPStubsResponse+HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B29A526BC2A256C0ED6EE62D14EB41 /* OHHTTPStubsResponse+HTTPMessage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9D62B26CF688578A0BCF4538F9530651 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCADABD8931E159D30AC261551E15CC /* APIEndpoint.swift */; };
+		9D7DCA60E5693B55839AE9A940F31798 /* RSDSerialization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E645E60C8C9CBAE2B97610E43D152D0 /* RSDSerialization-dummy.m */; };
+		9EB804A568C561FB58E7BA2C28374E28 /* APIJSONBodyEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430677CB569E7EDF01BA13A87348AE4E /* APIJSONBodyEncoder.swift */; };
+		9FB724EB3047A4DC2054321AD3ED3879 /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38090519698F8CD1337D02554071BC96 /* JSONHelpers.swift */; };
+		B3AA206267F07380A15DC42545E0E181 /* OHHTTPStubsResponse+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E09D8F2B59D20B70212C93D0B44FE35 /* OHHTTPStubsResponse+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5A145D64B1CD298979E9FE0E23B4A78 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171FA701F76C5E7F6B6C79889DEAE5F6 /* APISession.swift */; };
+		BD8413B5080A90317840809FD37DD0AE /* OHHTTPStubs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F963095B5DCAFFE900BFCB9E3B7C6B /* OHHTTPStubs-dummy.m */; };
+		C11FDF62AC7AB1F416B95DC03A23AD11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3346AB11138D9E9C5A58DA632F5E38A5 /* Foundation.framework */; };
+		C591A6D1DD269960BC3E7B5D850866BF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC2125E230236AC7378B6A7C866F6DF /* XCTest.framework */; };
+		D0E596994483F53E850BD6E376CA9DB3 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FDA558DE69A0A22DEEB427347B5F73 /* OHHTTPStubs+NSURLSessionConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D23562BDE11915A8510DBFC836853B0A /* ModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485645E417CD920E89B718D19A86A58 /* ModelHelpers.swift */; };
+		D41ADE961CC087FE1B4733C20210ADA9 /* APIJSONSerializableResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9087F5911C1CDE5429116FB90FDC10 /* APIJSONSerializableResponseParser.swift */; };
+		D7C1ABCEF67F8D605C9A7306A6248CB6 /* RSDRESTServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 840D60499CADCEC1E256A905631CD46B /* RSDRESTServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDD2AF8068989B3E805B99DC6411342F /* OHHTTPStubsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5358CDB57EF4B807A9744B9D8D676A /* OHHTTPStubsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E092ECAD6EFDE3E42A23B7802B1C0E1C /* OHHTTPStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B53E741306466410A0762D3738373 /* OHHTTPStubs.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E4FCA7CC81EFE26EA50B93829C9555C5 /* Pods-RSDTesting_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9245F1A89900DC64B02CD155420F1D8 /* Pods-RSDTesting_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E725EAAF0A02B9A533BAAF3F44A8244B /* URLAndParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E926C6DB8937B80404336451F2098D6 /* URLAndParameters.swift */; };
+		E7F5A011364E00EBC42024491B991228 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3346AB11138D9E9C5A58DA632F5E38A5 /* Foundation.framework */; };
+		E9016E459B69B6E3F80F3EB301215A65 /* APIPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76539F031B1DE96DB5B41D1B914DE596 /* APIPostData.swift */; };
+		E97177A6704AB48BFC0DF44D2A3A8B44 /* Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA8B21E40919316F3A68C36A7620ACD /* Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA0560FBCDB67C5514A9E4556B21C52D /* OHPathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEFA08C3C472B76844EE990C6AAC788 /* OHPathHelpers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ED4B9117881D57E0314BA06D111E9F4A /* APIMultipartBodyEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2263FB844076CC410402BFF0DC3E2 /* APIMultipartBodyEncoder.swift */; };
+		F0B59FA3197403D4B4F0FCDF153E140E /* RSDRESTServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B3303A04416B77A3C31F6852134CD /* RSDRESTServices-dummy.m */; };
+		F37B09D45AC595E7047B604FAF37CBEB /* Pods-RSDTesting_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7260AC39786DA2E35D8FE6D3014D313 /* Pods-RSDTesting_Example-dummy.m */; };
+		F914DE187FF7BAE42FF1DD30C53DF4C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3346AB11138D9E9C5A58DA632F5E38A5 /* Foundation.framework */; };
+		FB695E4255F7A8A450CF407E79CBABAE /* OHHTTPStubsResponse+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1738E9A76B17EAFD974A1285F5497B75 /* OHHTTPStubsResponse+JSON.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FCA134A0A282811EB571FD6122F3A64A /* OHHTTPStubsResponse+HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 11B6239AA2C6EE47797DF5F93F938AA3 /* OHHTTPStubsResponse+HTTPMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEE6245141D5D4600A906174F033AF2A /* RSDSerialization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B252517DB6C59DB1FB21FA636CE1637 /* RSDSerialization.framework */; };
+		FF3597616132F75D0AAD216058897956 /* Pods-RSDTesting_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8924835BCFF8F7A9F38DB568C6C85 /* Pods-RSDTesting_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27E35D18E951B1CBFAF51548CD115CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0803CC6F3F598FFA66E10D556CE3E9A9;
+			remoteInfo = RSDRESTServices;
+		};
+		35E6946106366373EE9FA5F0D0113445 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 644B5FE90B7AD901ED42E12C2920F540;
+			remoteInfo = OHHTTPStubs;
+		};
+		6041B881541AFCFF5ACE791C4A9C52B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 644B5FE90B7AD901ED42E12C2920F540;
+			remoteInfo = OHHTTPStubs;
+		};
+		623853AD5BA0847A89662985B7657E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DADB446406215363AE480EDB4F126A7E;
+			remoteInfo = RSDSerialization;
+		};
+		702366A943E736DD3D9FE9C192D2A9F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5432FF2503A768DAAB026EE972DB9F7;
+			remoteInfo = RSDTesting;
+		};
+		ABCFD092B3091C1106C6F1B26548658F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5432FF2503A768DAAB026EE972DB9F7;
+			remoteInfo = RSDTesting;
+		};
+		D136900481A2BB49354CC980C6F3BD34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DADB446406215363AE480EDB4F126A7E;
+			remoteInfo = RSDSerialization;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C0C5057767F8E5FB18F849F8D76E53 /* Pods-RSDTesting_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSDTesting_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		034775C49D89151F8F0CA8537F4579B9 /* RSDTesting-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSDTesting-umbrella.h"; sourceTree = "<group>"; };
+		06B29A526BC2A256C0ED6EE62D14EB41 /* OHHTTPStubsResponse+HTTPMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubsResponse+HTTPMessage.m"; path = "OHHTTPStubs/Sources/OHHTTPStubsResponse+HTTPMessage.m"; sourceTree = "<group>"; };
+		0A10DB233C08E57A1173F1F8C8EBA795 /* RSDSerialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSDSerialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A47832A0EC5F9D2BFE1484DB1FD27D2 /* RSDRESTServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSDRESTServices.modulemap; sourceTree = "<group>"; };
+		0C0B3303A04416B77A3C31F6852134CD /* RSDRESTServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSDRESTServices-dummy.m"; sourceTree = "<group>"; };
+		11B6239AA2C6EE47797DF5F93F938AA3 /* OHHTTPStubsResponse+HTTPMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OHHTTPStubsResponse+HTTPMessage.h"; path = "OHHTTPStubs/Sources/OHHTTPStubsResponse+HTTPMessage.h"; sourceTree = "<group>"; };
+		156FE661AA5D46A75DE22BEDBA63E774 /* Pods-RSDTesting_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSDTesting_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		171FA701F76C5E7F6B6C79889DEAE5F6 /* APISession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APISession.swift; path = Pod/Classes/APISession.swift; sourceTree = "<group>"; };
+		1738E9A76B17EAFD974A1285F5497B75 /* OHHTTPStubsResponse+JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubsResponse+JSON.m"; path = "OHHTTPStubs/Sources/OHHTTPStubsResponse+JSON.m"; sourceTree = "<group>"; };
+		19619AAB2AD4FD9F9E65667B8D90A63D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4914943A8C94A632561ADF9BD08878 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AFA9648918801AA67FA33D8FD8EE9A2 /* Pods-RSDTesting_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RSDTesting_Example.modulemap"; sourceTree = "<group>"; };
+		21908F9957EDF909CE76D60A5731710B /* RSDSerialization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSDSerialization-umbrella.h"; sourceTree = "<group>"; };
+		2647F71DD9AD7AEEFAE80966677C4E37 /* RSDSerialization.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSDSerialization.xcconfig; sourceTree = "<group>"; };
+		26AA672AB9A0B088A49F46D7FA4F2934 /* Pods-RSDTesting_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RSDTesting_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A884837FDF1861A1CC7374B0145B3E6 /* Pods-RSDTesting_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSDTesting_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3346AB11138D9E9C5A58DA632F5E38A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33B647A90E89A711D7A105E3BFD6D542 /* APIURLBodyEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIURLBodyEncoder.swift; path = Pod/Classes/BodyEncoders/APIURLBodyEncoder.swift; sourceTree = "<group>"; };
+		38090519698F8CD1337D02554071BC96 /* JSONHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONHelpers.swift; path = Pod/Classes/JSONHelpers.swift; sourceTree = "<group>"; };
+		3944AB9EAB1C36072A8E177BE0D531BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		397B954F3F7CAEB58B02261CF65E1C4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5F72296161195001A782A7E7F2A289 /* RSDRESTServices.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSDRESTServices.xcconfig; sourceTree = "<group>"; };
+		3B86AA6C0B9188BE24B538320F8D231E /* Pods-RSDTesting_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RSDTesting_Tests.modulemap"; sourceTree = "<group>"; };
+		3C531C96A0575EA4367AF8CD94E78B22 /* RSDSerialization.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSDSerialization.modulemap; sourceTree = "<group>"; };
+		3CC2125E230236AC7378B6A7C866F6DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3E926C6DB8937B80404336451F2098D6 /* URLAndParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLAndParameters.swift; path = Pod/Classes/URLAndParameters.swift; sourceTree = "<group>"; };
+		4165CC1D02BA2860BA3FC0BEFBF9FCB2 /* APIObjectResponseParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIObjectResponseParser.swift; path = Pod/Classes/ResponseParsers/APIObjectResponseParser.swift; sourceTree = "<group>"; };
+		430677CB569E7EDF01BA13A87348AE4E /* APIJSONBodyEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIJSONBodyEncoder.swift; path = Pod/Classes/BodyEncoders/APIJSONBodyEncoder.swift; sourceTree = "<group>"; };
+		431B82E893CBD344B8E3AA362774242D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		4DB2263FB844076CC410402BFF0DC3E2 /* APIMultipartBodyEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIMultipartBodyEncoder.swift; path = Pod/Classes/BodyEncoders/APIMultipartBodyEncoder.swift; sourceTree = "<group>"; };
+		503AE104965D96524D2434EE37F66206 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51566B1159A2AAF0245D9FD4B1179798 /* RSDTesting.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSDTesting.xcconfig; sourceTree = "<group>"; };
+		51FA1C5213243513C738C2669F60AD95 /* Pods-RSDTesting_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSDTesting_Example-frameworks.sh"; sourceTree = "<group>"; };
+		54F791A69B96491DAF75263A41204515 /* Pods-RSDTesting_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSDTesting_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		572D598F60248DD7ECD173D5C851BA18 /* OHHTTPStubs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-umbrella.h"; sourceTree = "<group>"; };
+		5730D2FD81171EC2C22C644541A5C8E2 /* Pods-RSDTesting_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSDTesting_Tests-resources.sh"; sourceTree = "<group>"; };
+		5C5358CDB57EF4B807A9744B9D8D676A /* OHHTTPStubsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubsResponse.h; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.h; sourceTree = "<group>"; };
+		5C8CE3E6FE3D4BA5EB9C5AB6CBFC6556 /* APIBodyEncoderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIBodyEncoderProtocol.swift; path = Pod/Classes/BodyEncoders/APIBodyEncoderProtocol.swift; sourceTree = "<group>"; };
+		6813B6286E0B2509038C4EA6A73EB928 /* OHHTTPStubs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHHTTPStubs.h; path = OHHTTPStubs/Sources/OHHTTPStubs.h; sourceTree = "<group>"; };
+		6913EC271ACC573F32929EC4B229624A /* Pods_RSDTesting_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSDTesting_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B44637D588817DB4C3EC89F003FF52A /* RSDTesting-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSDTesting-dummy.m"; sourceTree = "<group>"; };
+		6B4C46EE95EEAD650B27F86C28E701EF /* LoginResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginResponse.swift; path = Pod/Classes/LoginResponse.swift; sourceTree = "<group>"; };
+		6E645E60C8C9CBAE2B97610E43D152D0 /* RSDSerialization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSDSerialization-dummy.m"; sourceTree = "<group>"; };
+		72FB0A38AC7B633546519DB0002F2C40 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74164EC754FA50DE5CEB3FC1DCF96112 /* APIRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRequest.swift; path = Pod/Classes/APIRequest.swift; sourceTree = "<group>"; };
+		76539F031B1DE96DB5B41D1B914DE596 /* APIPostData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIPostData.swift; path = Pod/Classes/APIPostData.swift; sourceTree = "<group>"; };
+		77FED7D4EDE46CD1A88D9A50760507D4 /* OHHTTPStubsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubsResponse.m; path = OHHTTPStubs/Sources/OHHTTPStubsResponse.m; sourceTree = "<group>"; };
+		78F963095B5DCAFFE900BFCB9E3B7C6B /* OHHTTPStubs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs-dummy.m"; sourceTree = "<group>"; };
+		7A1B72054AF1EC50F911B9A0ADBDA072 /* OHHTTPStubs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OHHTTPStubs.modulemap; sourceTree = "<group>"; };
+		7A6FB791A2DB1D40220D3FD9F3C21CAD /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D5A545A763321777FE9F2C529432EA9 /* NetworkResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResponse.swift; path = Pod/Classes/NetworkResponse.swift; sourceTree = "<group>"; };
+		840D60499CADCEC1E256A905631CD46B /* RSDRESTServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSDRESTServices-umbrella.h"; sourceTree = "<group>"; };
+		8603C05C685233146CA72EAF6012DC7B /* APIDataResponseParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIDataResponseParser.swift; path = Pod/Classes/ResponseParsers/APIDataResponseParser.swift; sourceTree = "<group>"; };
+		893CCA023C2A540F4A5BB7F9A7514F03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B252517DB6C59DB1FB21FA636CE1637 /* RSDSerialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSDSerialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D433CD815577EA1DC2253E2643B3F48 /* RSDRESTServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSDRESTServices-prefix.pch"; sourceTree = "<group>"; };
+		907429317ADDFF0996498B8C8EDCD3B7 /* Pods-RSDTesting_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RSDTesting_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		91A91D3C0BBEB02A5D06679686A02EDD /* Pods-RSDTesting_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSDTesting_Example-resources.sh"; sourceTree = "<group>"; };
+		923C18AF3777C4BDADE020176DE307D9 /* Pods-RSDTesting_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSDTesting_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		94F521EF472EFBF0CE212FB1A86F3407 /* RSDTesting-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSDTesting-prefix.pch"; sourceTree = "<group>"; };
+		9959D21A20B3D71E43E3BFE876479419 /* OHHTTPStubs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHHTTPStubs.xcconfig; sourceTree = "<group>"; };
+		9E09D8F2B59D20B70212C93D0B44FE35 /* OHHTTPStubsResponse+JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OHHTTPStubsResponse+JSON.h"; path = "OHHTTPStubs/Sources/OHHTTPStubsResponse+JSON.h"; sourceTree = "<group>"; };
+		A0659349D6D686C72726F1282A87361F /* RSDSerialization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSDSerialization-prefix.pch"; sourceTree = "<group>"; };
+		A1FDA558DE69A0A22DEEB427347B5F73 /* OHHTTPStubs+NSURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OHHTTPStubs+NSURLSessionConfiguration.m"; path = "OHHTTPStubs/Sources/OHHTTPStubs+NSURLSessionConfiguration.m"; sourceTree = "<group>"; };
+		A485645E417CD920E89B718D19A86A58 /* ModelHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelHelpers.swift; path = Pod/Classes/ModelHelpers.swift; sourceTree = "<group>"; };
+		A69D6D205B700F3FE030C20889371BB4 /* Pods_RSDTesting_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSDTesting_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7260AC39786DA2E35D8FE6D3014D313 /* Pods-RSDTesting_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RSDTesting_Example-dummy.m"; sourceTree = "<group>"; };
+		A9A866D9DD11D091668868F3BD308A80 /* RSDTesting.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSDTesting.modulemap; sourceTree = "<group>"; };
+		AD7184BF1558EA9F4BFD0820FA14DF29 /* APISite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APISite.swift; path = Pod/Classes/APISite.swift; sourceTree = "<group>"; };
+		AEB2ED308C9F2A55BC8A995C483FCFC6 /* APICall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APICall.swift; path = Pod/Classes/APICall.swift; sourceTree = "<group>"; };
+		B3818AE1CA2524133BE41E3B38D1ED67 /* JSONSerializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONSerializable.swift; path = Pod/Classes/JSONSerializable.swift; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA9087F5911C1CDE5429116FB90FDC10 /* APIJSONSerializableResponseParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIJSONSerializableResponseParser.swift; path = Pod/Classes/ResponseParsers/APIJSONSerializableResponseParser.swift; sourceTree = "<group>"; };
+		BAA8B21E40919316F3A68C36A7620ACD /* Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Compatibility.h; path = OHHTTPStubs/Sources/Compatibility.h; sourceTree = "<group>"; };
+		BBB5836587A9CAA4C30CF99656B66ABE /* Pods-RSDTesting_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RSDTesting_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BC1A03A1DAE33156ACF043452958FBA5 /* OHPathHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHPathHelpers.h; path = OHHTTPStubs/Sources/OHPathHelpers.h; sourceTree = "<group>"; };
+		BDCADABD8931E159D30AC261551E15CC /* APIEndpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIEndpoint.swift; path = Pod/Classes/APIEndpoint.swift; sourceTree = "<group>"; };
+		C95A0A752342492DA3122C77EA8FC72E /* OHHTTPStubs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHHTTPStubs-prefix.pch"; sourceTree = "<group>"; };
+		C963C03095063149BE66FEBA10880583 /* AsynchronousTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsynchronousTestCase.swift; sourceTree = "<group>"; };
+		CF39544438B9B3DC9B878C3D07C32099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D00B53E741306466410A0762D3738373 /* OHHTTPStubs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHHTTPStubs.m; path = OHHTTPStubs/Sources/OHHTTPStubs.m; sourceTree = "<group>"; };
+		D4EAF6E40A3BBD76DEE5ABB20B4DA218 /* LoginParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginParameters.swift; path = Pod/Classes/LoginParameters.swift; sourceTree = "<group>"; };
+		D9245F1A89900DC64B02CD155420F1D8 /* Pods-RSDTesting_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSDTesting_Example-umbrella.h"; sourceTree = "<group>"; };
+		DB2041616294E1EF7A8CFBE48E074D85 /* APIResponseParserProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIResponseParserProtocol.swift; path = Pod/Classes/ResponseParsers/APIResponseParserProtocol.swift; sourceTree = "<group>"; };
+		DC031006222BAE5451EC30E5D76C8FFC /* APIConsumersClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIConsumersClient.swift; path = Pod/Classes/APIConsumersClient.swift; sourceTree = "<group>"; };
+		E9CCE52061DD966B31AFB0530EB1CD58 /* Pods-RSDTesting_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSDTesting_Tests-umbrella.h"; sourceTree = "<group>"; };
+		ECC8924835BCFF8F7A9F38DB568C6C85 /* Pods-RSDTesting_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RSDTesting_Tests-dummy.m"; sourceTree = "<group>"; };
+		EFEFA08C3C472B76844EE990C6AAC788 /* OHPathHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHPathHelpers.m; path = OHHTTPStubs/Sources/OHPathHelpers.m; sourceTree = "<group>"; };
+		F8505F82DDF5BA638C414105C8566AD4 /* RSDTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSDTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B59D085EF549F87D9D17A998BD5FB0 /* Pods-RSDTesting_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RSDTesting_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA80A458596D1A4488772B893C043663 /* RSDRESTServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSDRESTServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22B8B7467B4A0DA235389F5480971136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F5A011364E00EBC42024491B991228 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327560747B0FFA1627B7AAEC24C1370C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A1252EBE2FE02DA60DE59D4BBDC133 /* Foundation.framework in Frameworks */,
+				33595DB66CF9D1602EF36D04F5F09416 /* OHHTTPStubs.framework in Frameworks */,
+				FEE6245141D5D4600A906174F033AF2A /* RSDSerialization.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4266DAF5B215727D544E54E295C99E80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11FDF62AC7AB1F416B95DC03A23AD11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A4533EA7F7CFB5EAC64A073990BE0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEE5D314DD75763B503CD005068534D /* Foundation.framework in Frameworks */,
+				52C78FBBDEB4F4297A4DF48F20CE8705 /* UIKit.framework in Frameworks */,
+				C591A6D1DD269960BC3E7B5D850866BF /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12611D98A5D97720C0DAC5BA11F9A01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F914DE187FF7BAE42FF1DD30C53DF4C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F40884B4560D1E200240057C6AE90034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906DF0CC653246138168E0810DEE3A00 /* CFNetwork.framework in Frameworks */,
+				7C2F5D88E322DE28D5A5C657383A37FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		035412F8A0441069776ED31975D48B85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A6FB791A2DB1D40220D3FD9F3C21CAD /* OHHTTPStubs.framework */,
+				8B252517DB6C59DB1FB21FA636CE1637 /* RSDSerialization.framework */,
+				696655A448011510124FDCA08F27753C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04E3060E7181018D57EB3EA57AC90F9F /* Pods-RSDTesting_Example */ = {
+			isa = PBXGroup;
+			children = (
+				72FB0A38AC7B633546519DB0002F2C40 /* Info.plist */,
+				1AFA9648918801AA67FA33D8FD8EE9A2 /* Pods-RSDTesting_Example.modulemap */,
+				26AA672AB9A0B088A49F46D7FA4F2934 /* Pods-RSDTesting_Example-acknowledgements.markdown */,
+				F9B59D085EF549F87D9D17A998BD5FB0 /* Pods-RSDTesting_Example-acknowledgements.plist */,
+				A7260AC39786DA2E35D8FE6D3014D313 /* Pods-RSDTesting_Example-dummy.m */,
+				51FA1C5213243513C738C2669F60AD95 /* Pods-RSDTesting_Example-frameworks.sh */,
+				91A91D3C0BBEB02A5D06679686A02EDD /* Pods-RSDTesting_Example-resources.sh */,
+				D9245F1A89900DC64B02CD155420F1D8 /* Pods-RSDTesting_Example-umbrella.h */,
+				54F791A69B96491DAF75263A41204515 /* Pods-RSDTesting_Example.debug.xcconfig */,
+				2A884837FDF1861A1CC7374B0145B3E6 /* Pods-RSDTesting_Example.release.xcconfig */,
+			);
+			name = "Pods-RSDTesting_Example";
+			path = "Target Support Files/Pods-RSDTesting_Example";
+			sourceTree = "<group>";
+		};
+		0CCF2719A60C18EED0CE536F982A1401 /* RSDTesting */ = {
+			isa = PBXGroup;
+			children = (
+				9FE7F8CBB52FCD1480AFB51265726485 /* Pod */,
+				F4BBF3B795D459DA899CAA25985F551D /* Support Files */,
+			);
+			name = RSDTesting;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3FC5C31E17A730E9D800C023D53B172E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CCF2719A60C18EED0CE536F982A1401 /* RSDTesting */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5E2735E759D8E4C8B94F3AC756303A6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				893CCA023C2A540F4A5BB7F9A7514F03 /* Info.plist */,
+				3C531C96A0575EA4367AF8CD94E78B22 /* RSDSerialization.modulemap */,
+				2647F71DD9AD7AEEFAE80966677C4E37 /* RSDSerialization.xcconfig */,
+				6E645E60C8C9CBAE2B97610E43D152D0 /* RSDSerialization-dummy.m */,
+				A0659349D6D686C72726F1282A87361F /* RSDSerialization-prefix.pch */,
+				21908F9957EDF909CE76D60A5731710B /* RSDSerialization-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSDSerialization";
+			sourceTree = "<group>";
+		};
+		696655A448011510124FDCA08F27753C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				431B82E893CBD344B8E3AA362774242D /* CFNetwork.framework */,
+				3346AB11138D9E9C5A58DA632F5E38A5 /* Foundation.framework */,
+				CF39544438B9B3DC9B878C3D07C32099 /* UIKit.framework */,
+				3CC2125E230236AC7378B6A7C866F6DF /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		732E72FAD74CAC25B3F7106820BBFC1E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C963C03095063149BE66FEBA10880583 /* AsynchronousTestCase.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7842F8736EBFABB7991368526A9C932D /* OHHTTPStubs */ = {
+			isa = PBXGroup;
+			children = (
+				BAA8B21E40919316F3A68C36A7620ACD /* Compatibility.h */,
+				6813B6286E0B2509038C4EA6A73EB928 /* OHHTTPStubs.h */,
+				D00B53E741306466410A0762D3738373 /* OHHTTPStubs.m */,
+				A1FDA558DE69A0A22DEEB427347B5F73 /* OHHTTPStubs+NSURLSessionConfiguration.m */,
+				5C5358CDB57EF4B807A9744B9D8D676A /* OHHTTPStubsResponse.h */,
+				77FED7D4EDE46CD1A88D9A50760507D4 /* OHHTTPStubsResponse.m */,
+				11B6239AA2C6EE47797DF5F93F938AA3 /* OHHTTPStubsResponse+HTTPMessage.h */,
+				06B29A526BC2A256C0ED6EE62D14EB41 /* OHHTTPStubsResponse+HTTPMessage.m */,
+				9E09D8F2B59D20B70212C93D0B44FE35 /* OHHTTPStubsResponse+JSON.h */,
+				1738E9A76B17EAFD974A1285F5497B75 /* OHHTTPStubsResponse+JSON.m */,
+				BC1A03A1DAE33156ACF043452958FBA5 /* OHPathHelpers.h */,
+				EFEFA08C3C472B76844EE990C6AAC788 /* OHPathHelpers.m */,
+				E1BF83AF8FD98B4E49AD63AAC0A9C067 /* Support Files */,
+			);
+			path = OHHTTPStubs;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				3FC5C31E17A730E9D800C023D53B172E /* Development Pods */,
+				035412F8A0441069776ED31975D48B85 /* Frameworks */,
+				E7F85AE7DFD8171E536A3129FADBF850 /* Pods */,
+				D14EEDBF3F23E00174E9C608CD817DBB /* Products */,
+				E1489C65F5CE1C9E72180E09AA6AF269 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84BAC02FF54B32025D784EFBFA17B94B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3944AB9EAB1C36072A8E177BE0D531BA /* Info.plist */,
+				0A47832A0EC5F9D2BFE1484DB1FD27D2 /* RSDRESTServices.modulemap */,
+				3B5F72296161195001A782A7E7F2A289 /* RSDRESTServices.xcconfig */,
+				0C0B3303A04416B77A3C31F6852134CD /* RSDRESTServices-dummy.m */,
+				8D433CD815577EA1DC2253E2643B3F48 /* RSDRESTServices-prefix.pch */,
+				840D60499CADCEC1E256A905631CD46B /* RSDRESTServices-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSDRESTServices";
+			sourceTree = "<group>";
+		};
+		9FE7F8CBB52FCD1480AFB51265726485 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				732E72FAD74CAC25B3F7106820BBFC1E /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		A52A53C8923E17C947C50995582CA0C6 /* Pods-RSDTesting_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1A4914943A8C94A632561ADF9BD08878 /* Info.plist */,
+				3B86AA6C0B9188BE24B538320F8D231E /* Pods-RSDTesting_Tests.modulemap */,
+				907429317ADDFF0996498B8C8EDCD3B7 /* Pods-RSDTesting_Tests-acknowledgements.markdown */,
+				BBB5836587A9CAA4C30CF99656B66ABE /* Pods-RSDTesting_Tests-acknowledgements.plist */,
+				ECC8924835BCFF8F7A9F38DB568C6C85 /* Pods-RSDTesting_Tests-dummy.m */,
+				00C0C5057767F8E5FB18F849F8D76E53 /* Pods-RSDTesting_Tests-frameworks.sh */,
+				5730D2FD81171EC2C22C644541A5C8E2 /* Pods-RSDTesting_Tests-resources.sh */,
+				E9CCE52061DD966B31AFB0530EB1CD58 /* Pods-RSDTesting_Tests-umbrella.h */,
+				923C18AF3777C4BDADE020176DE307D9 /* Pods-RSDTesting_Tests.debug.xcconfig */,
+				156FE661AA5D46A75DE22BEDBA63E774 /* Pods-RSDTesting_Tests.release.xcconfig */,
+			);
+			name = "Pods-RSDTesting_Tests";
+			path = "Target Support Files/Pods-RSDTesting_Tests";
+			sourceTree = "<group>";
+		};
+		B04E08FAAD117D8926D691B0DA3A46F0 /* RSDSerialization */ = {
+			isa = PBXGroup;
+			children = (
+				38090519698F8CD1337D02554071BC96 /* JSONHelpers.swift */,
+				B3818AE1CA2524133BE41E3B38D1ED67 /* JSONSerializable.swift */,
+				A485645E417CD920E89B718D19A86A58 /* ModelHelpers.swift */,
+				5E2735E759D8E4C8B94F3AC756303A6B /* Support Files */,
+			);
+			path = RSDSerialization;
+			sourceTree = "<group>";
+		};
+		D14EEDBF3F23E00174E9C608CD817DBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				503AE104965D96524D2434EE37F66206 /* OHHTTPStubs.framework */,
+				6913EC271ACC573F32929EC4B229624A /* Pods_RSDTesting_Example.framework */,
+				A69D6D205B700F3FE030C20889371BB4 /* Pods_RSDTesting_Tests.framework */,
+				FA80A458596D1A4488772B893C043663 /* RSDRESTServices.framework */,
+				0A10DB233C08E57A1173F1F8C8EBA795 /* RSDSerialization.framework */,
+				F8505F82DDF5BA638C414105C8566AD4 /* RSDTesting.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1489C65F5CE1C9E72180E09AA6AF269 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				04E3060E7181018D57EB3EA57AC90F9F /* Pods-RSDTesting_Example */,
+				A52A53C8923E17C947C50995582CA0C6 /* Pods-RSDTesting_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E1BF83AF8FD98B4E49AD63AAC0A9C067 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19619AAB2AD4FD9F9E65667B8D90A63D /* Info.plist */,
+				7A1B72054AF1EC50F911B9A0ADBDA072 /* OHHTTPStubs.modulemap */,
+				9959D21A20B3D71E43E3BFE876479419 /* OHHTTPStubs.xcconfig */,
+				78F963095B5DCAFFE900BFCB9E3B7C6B /* OHHTTPStubs-dummy.m */,
+				C95A0A752342492DA3122C77EA8FC72E /* OHHTTPStubs-prefix.pch */,
+				572D598F60248DD7ECD173D5C851BA18 /* OHHTTPStubs-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OHHTTPStubs";
+			sourceTree = "<group>";
+		};
+		E7F85AE7DFD8171E536A3129FADBF850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7842F8736EBFABB7991368526A9C932D /* OHHTTPStubs */,
+				ED0824D89C857EDF820892E80A8F833C /* RSDRESTServices */,
+				B04E08FAAD117D8926D691B0DA3A46F0 /* RSDSerialization */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED0824D89C857EDF820892E80A8F833C /* RSDRESTServices */ = {
+			isa = PBXGroup;
+			children = (
+				5C8CE3E6FE3D4BA5EB9C5AB6CBFC6556 /* APIBodyEncoderProtocol.swift */,
+				AEB2ED308C9F2A55BC8A995C483FCFC6 /* APICall.swift */,
+				DC031006222BAE5451EC30E5D76C8FFC /* APIConsumersClient.swift */,
+				8603C05C685233146CA72EAF6012DC7B /* APIDataResponseParser.swift */,
+				BDCADABD8931E159D30AC261551E15CC /* APIEndpoint.swift */,
+				430677CB569E7EDF01BA13A87348AE4E /* APIJSONBodyEncoder.swift */,
+				BA9087F5911C1CDE5429116FB90FDC10 /* APIJSONSerializableResponseParser.swift */,
+				4DB2263FB844076CC410402BFF0DC3E2 /* APIMultipartBodyEncoder.swift */,
+				4165CC1D02BA2860BA3FC0BEFBF9FCB2 /* APIObjectResponseParser.swift */,
+				76539F031B1DE96DB5B41D1B914DE596 /* APIPostData.swift */,
+				74164EC754FA50DE5CEB3FC1DCF96112 /* APIRequest.swift */,
+				DB2041616294E1EF7A8CFBE48E074D85 /* APIResponseParserProtocol.swift */,
+				171FA701F76C5E7F6B6C79889DEAE5F6 /* APISession.swift */,
+				AD7184BF1558EA9F4BFD0820FA14DF29 /* APISite.swift */,
+				33B647A90E89A711D7A105E3BFD6D542 /* APIURLBodyEncoder.swift */,
+				D4EAF6E40A3BBD76DEE5ABB20B4DA218 /* LoginParameters.swift */,
+				6B4C46EE95EEAD650B27F86C28E701EF /* LoginResponse.swift */,
+				7D5A545A763321777FE9F2C529432EA9 /* NetworkResponse.swift */,
+				3E926C6DB8937B80404336451F2098D6 /* URLAndParameters.swift */,
+				84BAC02FF54B32025D784EFBFA17B94B /* Support Files */,
+			);
+			path = RSDRESTServices;
+			sourceTree = "<group>";
+		};
+		F4BBF3B795D459DA899CAA25985F551D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				397B954F3F7CAEB58B02261CF65E1C4D /* Info.plist */,
+				A9A866D9DD11D091668868F3BD308A80 /* RSDTesting.modulemap */,
+				51566B1159A2AAF0245D9FD4B1179798 /* RSDTesting.xcconfig */,
+				6B44637D588817DB4C3EC89F003FF52A /* RSDTesting-dummy.m */,
+				94F521EF472EFBF0CE212FB1A86F3407 /* RSDTesting-prefix.pch */,
+				034775C49D89151F8F0CA8537F4579B9 /* RSDTesting-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RSDTesting";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		264FC468A48E41C4FE1D7B5202E949A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70937E15EDFF6DC6BBB103EF5F87D559 /* RSDSerialization-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E92227EC9FF038ED5AC8ACE952D54D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97177A6704AB48BFC0DF44D2A3A8B44 /* Compatibility.h in Headers */,
+				5343C2976ECAF28B12F0C8DB00B78A62 /* OHHTTPStubs-umbrella.h in Headers */,
+				47686641885B48E09ED09AF01AAAED8E /* OHHTTPStubs.h in Headers */,
+				FCA134A0A282811EB571FD6122F3A64A /* OHHTTPStubsResponse+HTTPMessage.h in Headers */,
+				B3AA206267F07380A15DC42545E0E181 /* OHHTTPStubsResponse+JSON.h in Headers */,
+				DDD2AF8068989B3E805B99DC6411342F /* OHHTTPStubsResponse.h in Headers */,
+				2063118AD74AC171F15A3D0CF21D1690 /* OHPathHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697E95643104E331E712D700ACC0BA9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0FA55B5BE8957FECF519E7118C826A /* RSDTesting-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8683E22A806A26EE059C0297F135BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C1ABCEF67F8D605C9A7306A6248CB6 /* RSDRESTServices-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1C26E5AE4A779B62CD5E9427783278 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E3446B5A51AE7C207C664A90981DE3 /* Pods-RSDTesting_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF2E5B44F1321BFF7D574D84286F505 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FCA7CC81EFE26EA50B93829C9555C5 /* Pods-RSDTesting_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0803CC6F3F598FFA66E10D556CE3E9A9 /* RSDRESTServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ACF748BF31E53639845353DBBAD300B /* Build configuration list for PBXNativeTarget "RSDRESTServices" */;
+			buildPhases = (
+				C32D3B18CED92F555C3A5BD3E9A504E9 /* Sources */,
+				327560747B0FFA1627B7AAEC24C1370C /* Frameworks */,
+				AE8683E22A806A26EE059C0297F135BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1786A10FCE4448F4AFB5371D3E3CC30 /* PBXTargetDependency */,
+				639D0D5559B4F02123D408766E0C8D76 /* PBXTargetDependency */,
+			);
+			name = RSDRESTServices;
+			productName = RSDRESTServices;
+			productReference = FA80A458596D1A4488772B893C043663 /* RSDRESTServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1CE5A4C0F8C591AD2C4B6CAD9D9C194E /* Pods-RSDTesting_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA195C29FA17146C2C6FC9556D9AA118 /* Build configuration list for PBXNativeTarget "Pods-RSDTesting_Tests" */;
+			buildPhases = (
+				5D04C2D28EBF37A3A2E1C49F240A1477 /* Sources */,
+				22B8B7467B4A0DA235389F5480971136 /* Frameworks */,
+				FA1C26E5AE4A779B62CD5E9427783278 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62296E4CE0E4A3183F72D833D59D7E40 /* PBXTargetDependency */,
+				DA4BB7F73CFB415972BE0CE76895C6D9 /* PBXTargetDependency */,
+				663FD53DAF42A1E7D64151309DE92395 /* PBXTargetDependency */,
+				1031DA5D5BBCCA17541208A0EE59E65D /* PBXTargetDependency */,
+			);
+			name = "Pods-RSDTesting_Tests";
+			productName = "Pods-RSDTesting_Tests";
+			productReference = A69D6D205B700F3FE030C20889371BB4 /* Pods_RSDTesting_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		644B5FE90B7AD901ED42E12C2920F540 /* OHHTTPStubs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C171A380A9FE904821B54528ECC8AFB /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */;
+			buildPhases = (
+				BF25296ADB08CB867A295E3B2B084A95 /* Sources */,
+				F40884B4560D1E200240057C6AE90034 /* Frameworks */,
+				2E92227EC9FF038ED5AC8ACE952D54D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OHHTTPStubs;
+			productName = OHHTTPStubs;
+			productReference = 503AE104965D96524D2434EE37F66206 /* OHHTTPStubs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5432FF2503A768DAAB026EE972DB9F7 /* RSDTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4461AE98EA4911CEAEBD8DF6BA82DAA /* Build configuration list for PBXNativeTarget "RSDTesting" */;
+			buildPhases = (
+				6D7E457781F6BBA233332775C82D8F69 /* Sources */,
+				88A4533EA7F7CFB5EAC64A073990BE0E /* Frameworks */,
+				697E95643104E331E712D700ACC0BA9D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSDTesting;
+			productName = RSDTesting;
+			productReference = F8505F82DDF5BA638C414105C8566AD4 /* RSDTesting.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D996DCBC1BE977F56B9E4578F0AB4D66 /* Pods-RSDTesting_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB0B535AE172E7831E5C921B3E4546A /* Build configuration list for PBXNativeTarget "Pods-RSDTesting_Example" */;
+			buildPhases = (
+				C4A216174F96071D176661AA27CC0C89 /* Sources */,
+				E12611D98A5D97720C0DAC5BA11F9A01 /* Frameworks */,
+				FEF2E5B44F1321BFF7D574D84286F505 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FB84C0D632D40D9EB4478FCF6768DB2 /* PBXTargetDependency */,
+			);
+			name = "Pods-RSDTesting_Example";
+			productName = "Pods-RSDTesting_Example";
+			productReference = 6913EC271ACC573F32929EC4B229624A /* Pods_RSDTesting_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DADB446406215363AE480EDB4F126A7E /* RSDSerialization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0343943F3AFE05A5B01A74BFFFF1311D /* Build configuration list for PBXNativeTarget "RSDSerialization" */;
+			buildPhases = (
+				BBDAE56328B8BC5CCD286C505E7827A9 /* Sources */,
+				4266DAF5B215727D544E54E295C99E80 /* Frameworks */,
+				264FC468A48E41C4FE1D7B5202E949A4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSDSerialization;
+			productName = RSDSerialization;
+			productReference = 0A10DB233C08E57A1173F1F8C8EBA795 /* RSDSerialization.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D14EEDBF3F23E00174E9C608CD817DBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				644B5FE90B7AD901ED42E12C2920F540 /* OHHTTPStubs */,
+				D996DCBC1BE977F56B9E4578F0AB4D66 /* Pods-RSDTesting_Example */,
+				1CE5A4C0F8C591AD2C4B6CAD9D9C194E /* Pods-RSDTesting_Tests */,
+				0803CC6F3F598FFA66E10D556CE3E9A9 /* RSDRESTServices */,
+				DADB446406215363AE480EDB4F126A7E /* RSDSerialization */,
+				B5432FF2503A768DAAB026EE972DB9F7 /* RSDTesting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D04C2D28EBF37A3A2E1C49F240A1477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3597616132F75D0AAD216058897956 /* Pods-RSDTesting_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7E457781F6BBA233332775C82D8F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BE45D0E02DA2C4B87DA5FD64E03CA8 /* AsynchronousTestCase.swift in Sources */,
+				4B0E0944A89F427C76E6BED777ACDCBB /* RSDTesting-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBDAE56328B8BC5CCD286C505E7827A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB724EB3047A4DC2054321AD3ED3879 /* JSONHelpers.swift in Sources */,
+				61061C63F9D3351D73E2EBEFBAF53F56 /* JSONSerializable.swift in Sources */,
+				D23562BDE11915A8510DBFC836853B0A /* ModelHelpers.swift in Sources */,
+				9D7DCA60E5693B55839AE9A940F31798 /* RSDSerialization-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF25296ADB08CB867A295E3B2B084A95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E596994483F53E850BD6E376CA9DB3 /* OHHTTPStubs+NSURLSessionConfiguration.m in Sources */,
+				BD8413B5080A90317840809FD37DD0AE /* OHHTTPStubs-dummy.m in Sources */,
+				E092ECAD6EFDE3E42A23B7802B1C0E1C /* OHHTTPStubs.m in Sources */,
+				97E6A07DA093B91B3F6D9D3A60563F3A /* OHHTTPStubsResponse+HTTPMessage.m in Sources */,
+				FB695E4255F7A8A450CF407E79CBABAE /* OHHTTPStubsResponse+JSON.m in Sources */,
+				1326CAE9F0D51EF37D205FB6033FAD89 /* OHHTTPStubsResponse.m in Sources */,
+				EA0560FBCDB67C5514A9E4556B21C52D /* OHPathHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32D3B18CED92F555C3A5BD3E9A504E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9AC9CEF73D0B1EB2644F807A690249 /* APIBodyEncoderProtocol.swift in Sources */,
+				86733094EA909FF48A0968B01914175D /* APICall.swift in Sources */,
+				4E7356E6276A4F39E9669BB3F6477469 /* APIConsumersClient.swift in Sources */,
+				3661D4104F1AF32EC6C6AA0FB79083ED /* APIDataResponseParser.swift in Sources */,
+				9D62B26CF688578A0BCF4538F9530651 /* APIEndpoint.swift in Sources */,
+				9EB804A568C561FB58E7BA2C28374E28 /* APIJSONBodyEncoder.swift in Sources */,
+				D41ADE961CC087FE1B4733C20210ADA9 /* APIJSONSerializableResponseParser.swift in Sources */,
+				ED4B9117881D57E0314BA06D111E9F4A /* APIMultipartBodyEncoder.swift in Sources */,
+				6C395314B4F8334164EE57AF6DE100A5 /* APIObjectResponseParser.swift in Sources */,
+				E9016E459B69B6E3F80F3EB301215A65 /* APIPostData.swift in Sources */,
+				80BBE2990B87DAFA0D46F216F67BBC77 /* APIRequest.swift in Sources */,
+				963E4DBF815A0CC253428F43FFB20BD5 /* APIResponseParserProtocol.swift in Sources */,
+				B5A145D64B1CD298979E9FE0E23B4A78 /* APISession.swift in Sources */,
+				418577043233262260163262D71E6DD7 /* APISite.swift in Sources */,
+				94AA2D4717AE457C2E22BE230F7AE643 /* APIURLBodyEncoder.swift in Sources */,
+				5857DE752D20EB325B621F651A21BB70 /* LoginParameters.swift in Sources */,
+				1D720A4A931BCBA379C13E1C2111399D /* LoginResponse.swift in Sources */,
+				466BE6A0513BE4BB178359AADBC3AC92 /* NetworkResponse.swift in Sources */,
+				F0B59FA3197403D4B4F0FCDF153E140E /* RSDRESTServices-dummy.m in Sources */,
+				E725EAAF0A02B9A533BAAF3F44A8244B /* URLAndParameters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A216174F96071D176661AA27CC0C89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37B09D45AC595E7047B604FAF37CBEB /* Pods-RSDTesting_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1031DA5D5BBCCA17541208A0EE59E65D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDTesting;
+			target = B5432FF2503A768DAAB026EE972DB9F7 /* RSDTesting */;
+			targetProxy = 702366A943E736DD3D9FE9C192D2A9F3 /* PBXContainerItemProxy */;
+		};
+		3FB84C0D632D40D9EB4478FCF6768DB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDTesting;
+			target = B5432FF2503A768DAAB026EE972DB9F7 /* RSDTesting */;
+			targetProxy = ABCFD092B3091C1106C6F1B26548658F /* PBXContainerItemProxy */;
+		};
+		62296E4CE0E4A3183F72D833D59D7E40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHHTTPStubs;
+			target = 644B5FE90B7AD901ED42E12C2920F540 /* OHHTTPStubs */;
+			targetProxy = 35E6946106366373EE9FA5F0D0113445 /* PBXContainerItemProxy */;
+		};
+		639D0D5559B4F02123D408766E0C8D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDSerialization;
+			target = DADB446406215363AE480EDB4F126A7E /* RSDSerialization */;
+			targetProxy = D136900481A2BB49354CC980C6F3BD34 /* PBXContainerItemProxy */;
+		};
+		663FD53DAF42A1E7D64151309DE92395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDSerialization;
+			target = DADB446406215363AE480EDB4F126A7E /* RSDSerialization */;
+			targetProxy = 623853AD5BA0847A89662985B7657E03 /* PBXContainerItemProxy */;
+		};
+		D1786A10FCE4448F4AFB5371D3E3CC30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHHTTPStubs;
+			target = 644B5FE90B7AD901ED42E12C2920F540 /* OHHTTPStubs */;
+			targetProxy = 6041B881541AFCFF5ACE791C4A9C52B7 /* PBXContainerItemProxy */;
+		};
+		DA4BB7F73CFB415972BE0CE76895C6D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDRESTServices;
+			target = 0803CC6F3F598FFA66E10D556CE3E9A9 /* RSDRESTServices */;
+			targetProxy = 27E35D18E951B1CBFAF51548CD115CAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FC05C92D917001B94016EB6A57E0D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51566B1159A2AAF0245D9FD4B1179798 /* RSDTesting.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSDTesting/RSDTesting-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSDTesting/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSDTesting/RSDTesting.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSDTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C03890D8C08C9C3E5EC3DA50644F3BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5F72296161195001A782A7E7F2A289 /* RSDRESTServices.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSDRESTServices/RSDRESTServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSDRESTServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSDRESTServices/RSDRESTServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSDRESTServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4CCFF9720073059F0B307ECB4BF53FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923C18AF3777C4BDADE020176DE307D9 /* Pods-RSDTesting_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RSDTesting_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RSDTesting_Tests/Pods-RSDTesting_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RSDTesting_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5593FCCD19456692D9A24253DFAC8F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156FE661AA5D46A75DE22BEDBA63E774 /* Pods-RSDTesting_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RSDTesting_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RSDTesting_Tests/Pods-RSDTesting_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RSDTesting_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		749043D933622205B63919E15EE6BD7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9959D21A20B3D71E43E3BFE876479419 /* OHHTTPStubs.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 4.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 4;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82F7DA6ECE6203AC7BE233C1F93D2888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2647F71DD9AD7AEEFAE80966677C4E37 /* RSDSerialization.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.2.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSDSerialization/RSDSerialization-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSDSerialization/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSDSerialization/RSDSerialization.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSDSerialization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		891EFAE2DD11D52E2246AF226A392448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5F72296161195001A782A7E7F2A289 /* RSDRESTServices.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSDRESTServices/RSDRESTServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSDRESTServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSDRESTServices/RSDRESTServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSDRESTServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		93BA0C54327B461544BE7085BF12776E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A884837FDF1861A1CC7374B0145B3E6 /* Pods-RSDTesting_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RSDTesting_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RSDTesting_Example/Pods-RSDTesting_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RSDTesting_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		965A27AD73553267D0B1FEEE301AD090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2647F71DD9AD7AEEFAE80966677C4E37 /* RSDSerialization.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.2.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSDSerialization/RSDSerialization-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSDSerialization/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSDSerialization/RSDSerialization.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSDSerialization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A77CA7AAD9DB9F764614193EABACFD44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F791A69B96491DAF75263A41204515 /* Pods-RSDTesting_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RSDTesting_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RSDTesting_Example/Pods-RSDTesting_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RSDTesting_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C810C6FF11586FCD84B6806AEAB6834F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9959D21A20B3D71E43E3BFE876479419 /* OHHTTPStubs.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 4.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 4;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OHHTTPStubs/OHHTTPStubs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHHTTPStubs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHHTTPStubs/OHHTTPStubs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OHHTTPStubs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F313A20E394563F352593CDF124A5DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51566B1159A2AAF0245D9FD4B1179798 /* RSDTesting.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSDTesting/RSDTesting-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSDTesting/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSDTesting/RSDTesting.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSDTesting;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0343943F3AFE05A5B01A74BFFFF1311D /* Build configuration list for PBXNativeTarget "RSDSerialization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F7DA6ECE6203AC7BE233C1F93D2888 /* Debug */,
+				965A27AD73553267D0B1FEEE301AD090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ACF748BF31E53639845353DBBAD300B /* Build configuration list for PBXNativeTarget "RSDRESTServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891EFAE2DD11D52E2246AF226A392448 /* Debug */,
+				3C03890D8C08C9C3E5EC3DA50644F3BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C171A380A9FE904821B54528ECC8AFB /* Build configuration list for PBXNativeTarget "OHHTTPStubs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C810C6FF11586FCD84B6806AEAB6834F /* Debug */,
+				749043D933622205B63919E15EE6BD7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4461AE98EA4911CEAEBD8DF6BA82DAA /* Build configuration list for PBXNativeTarget "RSDTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC05C92D917001B94016EB6A57E0D3E /* Debug */,
+				F313A20E394563F352593CDF124A5DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB0B535AE172E7831E5C921B3E4546A /* Build configuration list for PBXNativeTarget "Pods-RSDTesting_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77CA7AAD9DB9F764614193EABACFD44 /* Debug */,
+				93BA0C54327B461544BE7085BF12776E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA195C29FA17146C2C6FC9556D9AA118 /* Build configuration list for PBXNativeTarget "Pods-RSDTesting_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CCFF9720073059F0B307ECB4BF53FFA /* Debug */,
+				5593FCCD19456692D9A24253DFAC8F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

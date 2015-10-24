@@ -1,4 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/RaviDesai/RSDSpecs.git'
+
 use_frameworks!
 
 target 'RSDTesting_Example', :exclusive => true do
@@ -7,6 +9,5 @@ end
 
 target 'RSDTesting_Tests', :exclusive => true do
   pod "RSDTesting", :path => "../"
-
-  
+  pod "RSDRESTServices", "~> 0.1"
 end

@@ -1,0 +1,24 @@
+{
+  "name": "RSDTesting",
+  "version": "0.1.0",
+  "summary": "Helper code for tests written in Swift.",
+  "description": "Testing helpers for asynchronous code, faking, mocking, and swizzling",
+  "homepage": "https://github.com/RaviDesai/RSDTesting",
+  "license": "MIT",
+  "authors": {
+    "RaviDesai": "ravidesai@me.com"
+  },
+  "source": {
+    "git": "https://github.com/RaviDesai/RSDTesting.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "XCTest"
+  ]
+}
