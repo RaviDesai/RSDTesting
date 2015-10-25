@@ -115,8 +115,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				607FACEB1AFB9204008FA782 /* Tests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
