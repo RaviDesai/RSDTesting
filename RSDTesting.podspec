@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RSDTesting"
-  s.version          = "0.1.2"
+  s.version          = "0.1.4"
   s.summary          = "Helper code for tests written in Swift."
 
   s.description      = <<-DESC
@@ -29,4 +29,5 @@ Testing helpers for asynchronous code, faking, mocking, and swizzling
   # }
 
   s.frameworks = 'UIKit', 'XCTest'
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 end
