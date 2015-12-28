@@ -13,15 +13,23 @@ public extension UIView {
         return embeddedView(nil)
     }
 
-    public func embeddedView<T: UIView>(tag: Int?) -> T? {
+    public func embeddedView<T: UIView>(tag: Int) -> T? {
+        return embeddedView { $0.tag == tag }
+    }
+    
+    public func embeddedView<T: UIView>(comparer: ((T)->Bool)?) -> T? {
         var result: T?
         for subview in self.subviews {
             result = subview as? T
             if (result == nil) {
                 result = subview.embeddedView()
             } else {
-                if tag == nil { break }
-                if result?.tag == tag { break }
+                guard let compareFn = comparer else {
+                    break
+                }
+                if compareFn(result!) {
+                    break
+                }
             }
         }
         return result
