@@ -22,7 +22,7 @@ public extension UIView {
         for subview in self.subviews {
             result = subview as? T
             if (result == nil) {
-                result = subview.embeddedView()
+                result = subview.embeddedView(comparer)
             } else {
                 guard let compareFn = comparer else {
                     break
