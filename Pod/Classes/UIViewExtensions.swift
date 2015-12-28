@@ -30,6 +30,7 @@ public extension UIView {
                 if compareFn(result!) {
                     break
                 }
+                result = nil
             }
         }
         return result
