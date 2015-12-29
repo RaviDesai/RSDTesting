@@ -101,6 +101,17 @@ public class PopToRootViewControllerAnimatedInterceptCallbackWrapper {
     }
 }
 
+public class NavigationControllerInterceptCallbackWrapper {
+    var closure: (() -> (UINavigationController?))?
+    public init(_ closure: (() -> (UINavigationController?))) {
+        self.closure = closure
+    }
+    
+    public func call() -> UINavigationController? {
+        return self.closure?()
+    }
+}
+
 public extension UIViewController {
     var prepareForSegueInterceptCallback: PrepareForSegueInterceptCallbackWrapper? {
         get {
@@ -141,7 +152,24 @@ public extension UIViewController {
             objc_setAssociatedObject(self, &dismissViewControllerAnimatedInterceptCallbackAssociation, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
         }
     }
+    
+    var navigationControllerInterceptCallback: NavigationControllerInterceptCallbackWrapper? {
+        get {
+            let wrapper: AnyObject? = objc_getAssociatedObject(self, &navigationControllerAssociation)
+            return wrapper as? NavigationControllerInterceptCallbackWrapper
+        }
+        set {
+            objc_setAssociatedObject(self, &navigationControllerAssociation, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+        }
+    }
 
+    func testImpl_navigationController() -> UINavigationController? {
+        var controller = self.navigationControllerInterceptCallback?.call()
+        if (controller == nil) {
+            controller = testImpl_navigationController()
+        }
+        return controller
+    }
     
     func testImpl_performSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> () {
         let callOriginalMethod = self.performSegueWithIdentifierInterceptCallback?.call(identifier) ?? true
