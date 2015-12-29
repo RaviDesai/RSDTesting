@@ -237,10 +237,10 @@ public extension UINavigationController {
         }
     }
 
-    public func testImpl_popToRootViewControllerAnimatedInterceptCallback(animated: Bool) -> [UIViewController]? {
+    public func testImpl_popToRootViewControllerAnimated(animated: Bool) -> [UIViewController]? {
         let callOriginalMethod = self.popToRootViewControllerAnimatedInterceptCallback?.call(animated) ?? true
         if (callOriginalMethod) {
-            return testImpl_popToRootViewControllerAnimatedInterceptCallback(animated)
+            return testImpl_popToRootViewControllerAnimated(animated)
         }
         return nil
     }

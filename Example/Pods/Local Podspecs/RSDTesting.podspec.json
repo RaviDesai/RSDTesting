@@ -1,6 +1,6 @@
 {
   "name": "RSDTesting",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "summary": "Helper code for tests written in Swift.",
   "description": "Testing helpers for asynchronous code, faking, mocking, and swizzling",
   "homepage": "https://github.com/RaviDesai/RSDTesting",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/RaviDesai/RSDTesting.git",
-    "tag": "0.1.10"
+    "tag": "0.1.11"
   },
   "platforms": {
     "ios": "9.0"
