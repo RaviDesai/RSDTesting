@@ -163,7 +163,7 @@ public extension UIViewController {
         }
     }
 
-    private func testImpl_navigationController() -> UINavigationController? {
+    func testImpl_navigationController() -> UINavigationController? {
         var controller = self.navigationControllerInterceptCallback?.call()
         if (controller == nil) {
             controller = testImpl_navigationController()
@@ -171,21 +171,21 @@ public extension UIViewController {
         return controller
     }
     
-    private func testImpl_performSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> () {
+    func testImpl_performSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> () {
         let callOriginalMethod = self.performSegueWithIdentifierInterceptCallback?.call(identifier) ?? true
         if (callOriginalMethod) {
             testImpl_performSegueWithIdentifier(identifier, sender: sender)
         }
     }
     
-    private func testImpl_prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    func testImpl_prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let callOriginalMethod = self.prepareForSegueInterceptCallback?.call(segue) ?? true
         if (callOriginalMethod) {
             testImpl_prepareForSegue(segue, sender: sender)
         }
     }
     
-    private func testImpl_presentViewController(viewController: UIViewController, animated: Bool, completion:(()->())?) {
+    func testImpl_presentViewController(viewController: UIViewController, animated: Bool, completion:(()->())?) {
         let callOriginalMethod = self.presentViewControllerAnimatedInterceptCallback?.call(viewController, animated: animated) ?? true
         if (callOriginalMethod) {
             testImpl_presentViewController(viewController, animated: animated, completion: completion)
@@ -194,7 +194,7 @@ public extension UIViewController {
         }
     }
     
-    private func testImpl_dismissViewControllerAnimated(animated: Bool, completion:(()->())?) {
+    func testImpl_dismissViewControllerAnimated(animated: Bool, completion:(()->())?) {
         let callOriginalMethod = self.dismissViewControllerAnimatedInterceptCallback?.call(animated) ?? true
         if (callOriginalMethod) {
             testImpl_dismissViewControllerAnimated(animated, completion: completion)
@@ -237,7 +237,7 @@ public extension UINavigationController {
         }
     }
 
-    private func testImpl_popToRootViewControllerAnimated(animated: Bool) -> [UIViewController]? {
+    func testImpl_popToRootViewControllerAnimated(animated: Bool) -> [UIViewController]? {
         let callOriginalMethod = self.popToRootViewControllerAnimatedInterceptCallback?.call(animated) ?? true
         if (callOriginalMethod) {
             return testImpl_popToRootViewControllerAnimated(animated)
@@ -245,7 +245,7 @@ public extension UINavigationController {
         return nil
     }
     
-    private func testImpl_popViewControllerAnimated(animated: Bool) -> UIViewController? {
+    func testImpl_popViewControllerAnimated(animated: Bool) -> UIViewController? {
         let callOriginalMethod = self.popViewControllerAnimatedInterceptCallback?.call(animated) ?? true
         if (callOriginalMethod) {
             return testImpl_popViewControllerAnimated(animated)
@@ -253,7 +253,7 @@ public extension UINavigationController {
         return nil
     }
     
-    private func testImpl_pushViewController(viewController: UIViewController, animated: Bool) {
+    func testImpl_pushViewController(viewController: UIViewController, animated: Bool) {
         let callOriginalMethod = self.pushViewControllerAnimatedInterceptCallback?.call(viewController, animated: animated) ?? true
         if (callOriginalMethod) {
             testImpl_pushViewController(viewController, animated: animated)

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RSDTesting"
-  s.version          = "0.1.14"
+  s.version          = "0.1.15"
   s.summary          = "Helper code for tests written in Swift."
 
   s.description      = <<-DESC
